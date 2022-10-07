@@ -37,7 +37,12 @@ h4 {
   font-family: 'Poppins ExtraBold';
   font-size: 32px;
   color: black;
-
+  @include media-max(380px){
+    font-size: 20px;
+  }
+  @include media-max(280px){
+    font-size: 16px;
+  }
   em {
     font-family: inherit;
     font-style: normal;
@@ -127,6 +132,16 @@ section.hero {
     bottom: 50px;
     @include media-max(790px){
       bottom: 100px;
+    }
+    @include media-max(560px){
+      font-size: 1.5em;
+    }
+    @include media-max(450px){
+      font-size: 1em;
+      bottom: 50px;
+    }
+    @include media-max(290px){
+      font-size: 0.7em;
     }
     em {
       font-family: inherit;

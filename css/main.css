@@ -31,6 +31,16 @@ h4 em {
   font-size: 32px;
   color: black;
 }
+@media all and (max-width: 380px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 280px) {
+  .logo {
+    font-size: 16px;
+  }
+}
 .logo em {
   font-family: inherit;
   font-style: normal;
@@ -118,6 +128,22 @@ section.hero .title {
 @media all and (max-width: 790px) {
   section.hero .title {
     bottom: 100px;
+  }
+}
+@media all and (max-width: 560px) {
+  section.hero .title {
+    font-size: 1.5em;
+  }
+}
+@media all and (max-width: 450px) {
+  section.hero .title {
+    font-size: 1em;
+    bottom: 50px;
+  }
+}
+@media all and (max-width: 290px) {
+  section.hero .title {
+    font-size: 0.7em;
   }
 }
 section.hero .title em {
