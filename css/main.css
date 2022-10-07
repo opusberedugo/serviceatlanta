@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins Regular";
+  text-decoration: none;
+  transition-duration: 220ms;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins ExtraBold";
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+h1 em,
+h2 em,
+h3 em,
+h4 em {
+  font-family: inherit;
+  font-style: normal;
+  color: #028fe9;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: "Poppins ExtraBold";
+  font-size: 32px;
+  color: black;
+}
+.logo em {
+  font-family: inherit;
+  font-style: normal;
+  color: #028fe9;
+}
+
+nav {
+  background-color: #fafafa;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+@media all and (max-width: 790px) {
+  nav {
+    display: block;
+  }
+}
+nav .brand {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .brand .burger {
+  display: none;
+  border: none;
+  background-color: #fafafa;
+  padding: 10px;
+}
+@media all and (max-width: 790px) {
+  nav .brand .burger {
+    display: block;
+  }
+}
+nav .brand .burger:hover {
+  background-color: #028fe9;
+}
+nav .brand .burger:hover svg path {
+  fill: #fafafa;
+}
+nav .brand .burger svg path {
+  fill: #028fe9;
+}
+@media all and (max-width: 790px) {
+  nav .options {
+    display: none;
+  }
+}
+nav .options a {
+  padding: 20px;
+  color: black;
+}
+@media all and (max-width: 790px) {
+  nav .options a {
+    display: block;
+  }
+}
+nav .options a:hover {
+  background-color: #028fe9;
+  color: #fafafa;
+}
+
+section.hero .img img {
+  width: 100%;
+  filter: hue-rotate(45deg);
+}
+section.hero .title {
+  width: 40vw;
+  background-color: #e7e1e1;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: "Poppins ExtraBold";
+  padding: 20px;
+  text-align: center;
+  margin: 0 30vw;
+  position: relative;
+  bottom: 50px;
+}
+@media all and (max-width: 790px) {
+  section.hero .title {
+    bottom: 100px;
+  }
+}
+section.hero .title em {
+  font-family: inherit;
+  font-style: normal;
+  color: #028fe9;
+}
+
+section.goal {
+  text-transform: uppercase;
+  font-family: "Poppins ExtraBold";
+  padding: 25px;
+  text-align: center;
+  padding: 50px 20vw;
+}
+section.goal h2 {
+  text-align: center;
+  font-size: 2em;
+}
+section.goal h2 em {
+  font-family: inherit;
+  font-style: normal;
+  color: #028fe9;
+}
+section.goal ul {
+  list-style: none;
+}
+section.goal ul li {
+  list-style: none;
+}
+section.goal em {
+  font-family: inherit;
+  font-style: normal;
+  color: #028fe9;
+  font-size: 32px;
+}
+
+section.services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 20px 5vw;
+}
+@media all and (max-width: 790px) {
+  section.services .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 2vw;
+  }
+}
+section.services .container .service {
+  background-color: #028fe9;
+}
+section.services .container .service .img img {
+  width: 100%;
+}
+section.services .container .service p {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px 0;
+  color: #fafafa;
+}
+
+section.testimonial .testimony {
+  padding: 20px 5vw;
+}
+section.testimonial .testimony .container {
+  background-color: #e7e1e1;
+  text-align: center;
+  padding: 70px 10px;
+}
+section.testimonial .testimony .container .name {
+  margin: 20px 0;
+  color: #028fe9;
+}
+section.testimonial .testimony .container .story {
+  font-size: 24px;
+}
+
+.feedback {
+  padding: 20px 6vw;
+}
+.feedback input, .feedback textarea {
+  display: block;
+  border: #028fe9 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+.feedback textarea {
+  height: 200px;
+}
+.feedback button {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #028fe9;
+  color: #fafafa;
+  border: #028fe9;
+}
+
+footer {
+  background-color: #028fe9;
+  padding: 20px;
+  color: #fafafa;
+}
+footer h2 {
+  font-size: 1em;
+  text-align: left;
+}
+footer a {
+  display: block;
+  color: #fafafa;
+}
+
+.social {
+  background-color: #037ac4;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.social a {
+  display: block;
+  margin: 0 10px;
+}
+.social a svg path {
+  fill: #fafafa;
+}
+
+/*# sourceMappingURL=main.css.map */
